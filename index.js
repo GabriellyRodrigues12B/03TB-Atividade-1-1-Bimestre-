@@ -1,16 +1,21 @@
-const express = require('express');
+// importa o Express
+const express = require("express");
 
+// cria a aplicação
 const app = express();
-const PORT = 3000;
 
-// Rota principal
-app.get('/', (req, res) => {
+// definir a porta
+const PORT = process.env.PORT || 3000;
+
+// rota "/" que retorna um JSON
+app.get("/", (req, res) => {
   res.json({
-    mensagem: 'Olá frontend! O backend está funcionando corretamente 🚀'
+    mensagem: "Olá! Esse é meu backend simples 🚀",
+    sucesso: true
   });
 });
 
-// Inicialização do servidor
+// iniciar o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });

@@ -1,14 +1,8 @@
 {
-  "name": "backend-copilot",
+  "name": "meu-backend",
   "version": "1.0.0",
-  "description": "Projeto backend simples criado com ajuda do Copilot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
   }
 }
